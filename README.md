@@ -5,7 +5,7 @@
 | S. No. | University ID | Name |
 |--------|---------------|------|
 | 1 | 2420030400 | Masuma Fathema |
-| 2 | 2420030568 | Avinash Yarukala|
+| 2 | 2420030568 | Avinash Yarukala |
 | 3 | 2420030287 | Gorantla Divya Sree |
 
 ## Supervisor
@@ -75,4 +75,52 @@ Jira Task Creation / Update
 Developer Action
         ↓
 Continuous Re-analysis
--=
+```
+
+## Setup Instructions
+
+### Prerequisites
+
+Make sure the following software is installed:
+
+- Node.js and npm
+- PostgreSQL
+- Git
+- Docker
+
+### Clone the Repository
+
+```bash
+git clone https://github.com/Masuma-86/KLH-CSE-2026-27-2420030400-ChangeLens.git
+cd KLH-CSE-2026-27-2420030400-ChangeLens
+```
+
+### Install Dependencies
+
+```bash
+npm install
+```
+
+### Environment Variables
+
+Create a `.env` file in the project directory:
+
+```env
+PORT=5000
+DATABASE_URL=your_postgresql_connection_string
+GEMINI_API_KEY=your_gemini_api_key
+GITHUB_TOKEN=your_github_token
+JIRA_BASE_URL=your_jira_url
+JIRA_EMAIL=your_jira_email
+JIRA_API_TOKEN=your_jira_api_token
+```
+
+> **Note:** Never upload actual API keys, passwords, or tokens to GitHub.
+
+### Run the Application
+
+```bash
+npm run dev
+```
+
+The application will start on the local development server.
